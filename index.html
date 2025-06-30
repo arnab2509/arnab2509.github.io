@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnab Mondal - Portfolio</title>
+    <link rel="icon" type="image/png" href="profile_-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+             <button class="mobile-menu-btn" aria-label="Open menu" onclick="toggleDrawer()">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="logo">Arnab Mondal</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+           
+        </nav>
+        <!-- Drawer for mobile navigation -->
+        <div class="drawer" id="drawer">
+            <div class="drawer-header">
+                <span class="drawer-logo">Arnab Mondal</span>
+                <button class="drawer-close" aria-label="Close menu" onclick="toggleDrawer()">&times;</button>
+            </div>
+            <ul class="drawer-menu">
+                <li><a href="#home" onclick="toggleDrawer()">Home</a></li>
+                <li><a href="#about" onclick="toggleDrawer()">About Me</a></li>
+                <li><a href="#skills" onclick="toggleDrawer()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleDrawer()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleDrawer()">Projects</a></li>
+                <li><a href="#education" onclick="toggleDrawer()">Education</a></li>
+                <li><a href="#contact" onclick="toggleDrawer()">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="drawer-backdrop" id="drawer-backdrop" onclick="toggleDrawer()"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-flex" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; min-height: 60vh;">
+            <div class="hero-content" style="flex: 1;">
+                <p style="font-size:2.2rem; margin-bottom:0.5rem;">Hello, I'm</p>
+                <h1 style="font-size:3.5rem; font-weight:700; color:#356cff; margin-bottom:0.5rem;">
+                    Arnab Mondal
+                </h1>
+                <p class="subtitle" style="font-size:2rem; margin-bottom:2rem;">
+                    Android App Developer<span style="color:#b409ed;">_</span>
+                </p>
+                <div style="display:flex; gap:1.5rem;">
+                    <a href="https://drive.google.com/file/d/1Xhz6CcIl4EUdTgHolfoZvb8Xr6yJs8EE/view?usp=sharing" class="btn-primary" style="padding:1rem 2.5rem; font-size:1.2rem; font-weight:600; border-radius:12px; background:#356cff; color:#fff; border:none; box-shadow:0 2px 8px rgba(53,108,255,0.08); transition:background 0.2s;">Download CV</a>
+                    <a href="#contact" class="btn-secondary" style="padding:1rem 2.5rem; font-size:1.2rem; font-weight:600; border-radius:12px; border:2px solid #356cff; color:#356cff; background:transparent; transition:background 0.2s, color 0.2s;">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image" style="flex: 0 0 auto;">
+                <img src="profile_-removebg-preview.png" alt="Arnab Mondal" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container about-flex">
+            <div class="about-photo">
+                <img src="about-me.jpg" alt="Arnab Mondal" />
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    I'm Arnab Mondal, a B.Tech graduate in Computer Science from Heritage Institute of Technology, specializing in Android development using Flutter and data analytics. I build intuitive, scalable mobile apps and craft meaningful insights using Power BI, Tableau, and Excel. With hands-on experience in both development and analytics, I’m passionate about creating tech-driven solutions that make an impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="card skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg" alt="Python" class="skill-logo" />
+                        Python
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/java.svg" alt="Java" class="skill-logo" />
+                        Java
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript" class="skill-logo" />
+                        JavaScript
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/dart.svg" alt="Dart" class="skill-logo" />
+                        Dart
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg" alt="SQL" class="skill-logo" />
+                        SQL
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML" class="skill-logo" />
+                        HTML
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS" class="skill-logo" />
+                        CSS
+                    </span>
+                </div>
+            </div>
+            
+            <div class="card skill-category">
+                <h3>Data Analytics</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/chartdotjs.svg" alt="Data Analysis" class="skill-logo" />
+                        Data Analysis
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pandas.svg" alt="Pandas" class="skill-logo" />
+                        Pandas
+                    </span>
+                    
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/databricks.svg" alt="Data Modeling" class="skill-logo" />
+                        Data Modeling
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftexcel.svg" alt="Excel" class="skill-logo" />
+                        Excel
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg" alt="Tableau" class="skill-logo" />
+                        Tableau
+                    </span>
+                </div>
+            </div>
+            
+            <div class="card skill-category">
+                <h3>Cloud & Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mongodb.svg" alt="MongoDB" class="skill-logo" />
+                        MongoDB
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/firebase.svg" alt="Firebase" class="skill-logo" />
+                        Firebase
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg" alt="MySQL" class="skill-logo" />
+                        MySQL
+                    </span>
+                </div>
+            </div>
+            
+            <div class="card skill-category">
+                <h3>Tools & Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/flutter.svg" alt="Flutter" class="skill-logo" />
+                        Flutter
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/visualstudiocode.svg" alt="VS Code" class="skill-logo" />
+                        VS Code
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/androidstudio.svg" alt="Android Studio" class="skill-logo" />
+                        Android Studio
+                    </span>
+                    <span class="skill-tag">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/git.svg" alt="Git" class="skill-logo" />
+                        Git/
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="skill-logo" />
+                        GitHub
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Experience & Certifications</h2>
+            
+            <div class="card">
+                <div class="timeline-item">
+                    <h3>Android Developer Intern - Ardent Computech Pvt. Ltd.</h3>
+                    <div class="date">June 2024 - July 2024 | Kolkata, West Bengal</div>
+                    <ul>
+                        <li>Created custom mobile applications with native technologies</li>
+                        <li>Tested applications before final review to confirm issue resolution</li>
+                        <li>Maintained solid understanding of mobile development cycle</li>
+                        <li>Applied debugging techniques for quick issue resolution</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Recent Certifications (June 2025)</h3>
+                <div class="timeline-item">
+                    <h3>Deloitte Australia Data Analytics Job Simulation</h3>
+                    <ul>
+                        <li>Completed data analysis and forensic technology simulation</li>
+                        <li>Created data dashboard using Tableau</li>
+                        <li>Used Excel for data classification and business insights</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Accenture Software Engineering Virtual Simulation</h3>
+                    <ul>
+                        <li>Completed modules on Software Architecture, Security, Programming</li>
+                        <li>Gained hands-on experience with Testing and Agile methodologies</li>
+                        <li>Developed problem-solving and collaboration skills</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Tata Data Visualisation Job Simulation</h3>
+                    <ul>
+                        <li>Created data visualizations for business insights</li>
+                        <li>Prepared strategic questions for client leadership meetings</li>
+                        <li>Developed visuals for executive decision making</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Ecommerce Sales Dashboard in Power BI</h3>
+                    <div class="project-tech">Power BI, Excel, DAX</div>
+                    <p>Built an interactive Ecommerce Sales Dashboard using Power BI and Excel datasets. Delivered insights into sales performance, customer behavior, and product profitability using DAX measures and dynamic filters.</p>
+                    <a href="https://github.com/arnab2509/ecommerce-sales-dashboard" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Scribble Space</h3>
+                    <div class="project-tech">HTML5, CSS3, JavaScript (ES6+), SQL</div>
+                    <p>A modern Content Management System for managing rich media blog posts with offline data support. Features include search functionality, filtering options, dark mode, and smooth animations with custom notifications.</p>
+                    <a href="https://github.com/arnab2509/Scribble-Space" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Yumm: Food Delivery App</h3>
+                    <div class="project-tech">Flutter, Firebase, Authentication, Cloud Storage, Realtime DB</div>
+                    <p>A comprehensive food delivery application with real-time order tracking and secure Firebase authentication. Integrated Cloud Storage for user profiles and order history with intuitive UI design.</p>
+                    <a href="https://github.com/arnab2509/yumm" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+                
+                
+                <!-- <div class="project-card">
+                    <h3>Team Leadership Project</h3>
+                    <div class="project-tech">Flutter, Firebase - Team of 4 members</div>
+                    <p>Led a collaborative internship project overseeing all development phases from planning to deployment. Successfully managed project timelines, delegated tasks, and delivered a fully functional application meeting all requirements.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="card">
+                <div class="education-timeline">
+                    <div class="education-item timeline-item">
+                        <div class="education-item-details">
+                            <h3>Heritage Institute of Technology</h3>
+                            <div class="degree">Bachelor of Science in Computer Science</div>
+                        </div>
+                        <div class="education-item-meta">
+                            <div class="date">2022 - 2025</div>
+                            <div class="location">Kolkata, West Bengal</div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item timeline-item">
+                        <div class="education-item-details">
+                            <h3>Iswar Chandra Vidyasagar Polytechnic</h3>
+                            <div class="degree">Diploma in Computer Science and Technology</div>
+                        </div>
+                        <div class="education-item-meta">
+                            <div class="date">2019 - 2022</div>
+                            <div class="location">Jhargram, West Bengal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Relevant Coursework</h3>
+                <div class="coursework-grid">
+                    <div class="coursework-item">Data Structures & Algorithms</div>
+                    <div class="coursework-item">Operating Systems</div>
+                    <div class="coursework-item">Object Oriented Programming</div>
+                    <div class="coursework-item">Database Management System</div>
+                    <div class="coursework-item">Software Engineering</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container contact-container">
+            <div class="contact-photo">
+                <img src="profile_-removebg-preview.png" alt="Arnab Mondal" />
+            </div>
+            <div class="contact-details">
+                <h2>Contact Me</h2>
+                <p>Let's connect! I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/arnab2509/" target="_blank" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/arnab2509" target="_blank" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+                    </a>
+                    <a href="mailto:arnabmondal2509@gmail.com" target="_blank" aria-label="Gmail">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Arnab Mondal. All rights reserved.</p>
+            <p>Passionate about creating innovative solutions through technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
