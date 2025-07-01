@@ -56,7 +56,9 @@ const allSkills = [
             { name: "Data Modeling", icon: "databricks" },
             { name: "Excel", icon: "microsoftexcel" },
             { name: "Tableau", icon: "tableau" },
-            { name: "Power BI", icon: "powerbi" }
+            { name: "Power BI", icon: "powerbi" },
+             { name: "NumPy", icon: "numpy" },
+             { name: "Matplotlib", icon: "jupyter" }
         ]
     },
     {
@@ -74,7 +76,8 @@ const allSkills = [
             { name: "VS Code", icon: "visualstudiocode" },
             { name: "Android Studio", icon: "androidstudio" },
             { name: "Git", icon: "git" },
-            { name: "GitHub", icon: "github" }
+            { name: "GitHub", icon: "github" },
+            {name:"Jupyter Notebook", icon: "jupyter" },
         ]
     }
 ];
@@ -115,6 +118,9 @@ window.aboutMe = {
     photo: "about-me.jpg",
     text: "I'm Arnab Mondal, a B.Tech graduate in Computer Science from Heritage Institute of Technology, specializing in Android development using Flutter and data analytics. I build intuitive, scalable mobile apps and craft meaningful insights using Power BI, Tableau, and Excel. With hands-on experience in both development and analytics, I’m passionate about creating tech-driven solutions that make an impact."
 };
+
+// CV Download Link
+window.cvLink = "https://drive.google.com/file/d/1VxvL0pVIzkr_nHAJowj49vKUf_oj9hVQ/view?usp=sharing";
 
 // Education
 window.education = [
