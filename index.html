@@ -6,6 +6,7 @@
     <title>Arnab Mondal - Portfolio</title>
     <link rel="icon" type="image/png" href="profile_-removebg-preview.png">
     <link rel="stylesheet" href="style.css">
+    <script src="data-provider.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -70,16 +71,8 @@
 
     <!-- About Section -->
     <section id="about" class="section about-section">
-        <div class="container about-flex">
-            <div class="about-photo">
-                <img src="about-me.jpg" alt="Arnab Mondal" />
-            </div>
-            <div class="about-content">
-                <h2 class="section-title">About Me</h2>
-                <p>
-                    I'm Arnab Mondal, a B.Tech graduate in Computer Science from Heritage Institute of Technology, specializing in Android development using Flutter and data analytics. I build intuitive, scalable mobile apps and craft meaningful insights using Power BI, Tableau, and Excel. With hands-on experience in both development and analytics, I’m passionate about creating tech-driven solutions that make an impact.
-                </p>
-            </div>
+        <div class="container about-flex" id="about-section-js">
+            <!-- About Me will be rendered by JS -->
         </div>
     </section>
 
@@ -87,167 +80,16 @@
     <section id="skills" class="section">
     <div class="container">
         <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="card skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg" alt="Python" class="skill-logo" />
-                        Python
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/java.svg" alt="Java" class="skill-logo" />
-                        Java
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript" class="skill-logo" />
-                        JavaScript
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/dart.svg" alt="Dart" class="skill-logo" />
-                        Dart
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg" alt="SQL" class="skill-logo" />
-                        SQL
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML" class="skill-logo" />
-                        HTML
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS" class="skill-logo" />
-                        CSS
-                    </span>
-                </div>
-            </div>
-            
-            <div class="card skill-category">
-                <h3>Data Analytics</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/chartdotjs.svg" alt="Data Analysis" class="skill-logo" />
-                        Data Analysis
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pandas.svg" alt="Pandas" class="skill-logo" />
-                        Pandas
-                    </span>
-                    
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/databricks.svg" alt="Data Modeling" class="skill-logo" />
-                        Data Modeling
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftexcel.svg" alt="Excel" class="skill-logo" />
-                        Excel
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg" alt="Tableau" class="skill-logo" />
-                        Tableau
-                    </span>
-                </div>
-            </div>
-            
-            <div class="card skill-category">
-                <h3>Cloud & Databases</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mongodb.svg" alt="MongoDB" class="skill-logo" />
-                        MongoDB
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/firebase.svg" alt="Firebase" class="skill-logo" />
-                        Firebase
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg" alt="MySQL" class="skill-logo" />
-                        MySQL
-                    </span>
-                </div>
-            </div>
-            
-            <div class="card skill-category">
-                <h3>Tools & Frameworks</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/flutter.svg" alt="Flutter" class="skill-logo" />
-                        Flutter
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/visualstudiocode.svg" alt="VS Code" class="skill-logo" />
-                        VS Code
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/androidstudio.svg" alt="Android Studio" class="skill-logo" />
-                        Android Studio
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/git.svg" alt="Git" class="skill-logo" />
-                        Git/
-                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="skill-logo" />
-                        GitHub
-                    </span>
-                </div>
-            </div>
+        <div class="skills-grid" id="skills-grid">
+            <!-- Skills will be rendered by JS -->
         </div>
     </div>
-</section>
+    </section>
 
     <!-- Experience Section -->
     <section id="experience" class="section" style="background: var(--bg-secondary);">
-        <div class="container">
-            <h2 class="section-title">Experience & Certifications</h2>
-            
-            <div class="card">
-                <div class="timeline-item">
-                    <h3>Android Developer Intern - Ardent Computech Pvt. Ltd.</h3>
-                    <div class="date">June 2024 - July 2024 | Kolkata, West Bengal</div>
-                    <ul>
-                        <li>Created custom mobile applications with native technologies</li>
-                        <li>Tested applications before final review to confirm issue resolution</li>
-                        <li>Maintained solid understanding of mobile development cycle</li>
-                        <li>Applied debugging techniques for quick issue resolution</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Recent Certifications (June 2025)</h3>
-                <div class="timeline-item">
-                    <h3>
-                        Deloitte Australia Data Analytics Job Simulation
-                        <a href="https://drive.google.com/file/d/1DzGRJMUFx7gkKkKgWdFihXwu6iVFdYen/view?usp=sharing"target="_blank" style="margin-left:10px; font-size:0.9em; text-decoration:none; color:#356cff; border:1px solid #356cff; border-radius:6px; padding:2px 8px;">certificate</a>
-                    </h3>
-                    <ul>
-                        <li>Completed data analysis and forensic technology simulation</li>
-                        <li>Created data dashboard using Tableau</li>
-                        <li>Used Excel for data classification and business insights</li>
-                    </ul>
-                </div>
-                
-                <div class="timeline-item">
-                    <h3>
-                        Accenture Software Engineering Virtual Simulation
-                        <a href="https://drive.google.com/file/d/17JHu3_Shuex-d22SqR0CwwZWkI4sAt0c/view?usp=sharing"target="_blank" style="margin-left:10px; font-size:0.9em; text-decoration:none; color:#356cff; border:1px solid #356cff; border-radius:6px; padding:2px 8px;">certificate</a>
-                    </h3>
-                    <ul>
-                        <li>Completed modules on Software Architecture, Security, Programming</li>
-                        <li>Gained hands-on experience with Testing and Agile methodologies</li>
-                        <li>Developed problem-solving and collaboration skills</li>
-                    </ul>
-                </div>
-                
-                <div class="timeline-item">
-                    <h3>
-                        Tata Data Visualisation Job Simulation
-                        <a href="https://drive.google.com/file/d/12ALdvt0Q-OHzLy6YZSOtLFY1OY3RiCOC/view?usp=sharing" target="_blank" style="margin-left:10px; font-size:0.9em; text-decoration:none; color:#356cff; border:1px solid #356cff; border-radius:6px; padding:2px 8px;">certificate</a>
-                    </h3>
-                    <ul>
-                        <li>Created data visualizations for business insights</li>
-                        <li>Prepared strategic questions for client leadership meetings</li>
-                        <li>Developed visuals for executive decision making</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="container" id="experience-section-js">
+            <!-- Experience will be rendered by JS -->
         </div>
     </section>
 
@@ -255,78 +97,19 @@
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Ecommerce Sales Dashboard in Power BI</h3>
-                    <div class="project-tech">Power BI, Excel, DAX</div>
-                    <p>Built an interactive Ecommerce Sales Dashboard using Power BI and Excel datasets. Delivered insights into sales performance, customer behavior, and product profitability using DAX measures and dynamic filters.</p>
-                    <a href="https://github.com/arnab2509/ecommerce-sales-dashboard" class="project-link" target="_blank">View on GitHub →</a>
-                </div>
-                <div class="project-card">
-                    <h3>Scribble Space</h3>
-                    <div class="project-tech">HTML5, CSS3, JavaScript (ES6+), SQL</div>
-                    <p>A modern Content Management System for managing rich media blog posts with offline data support. Features include search functionality, filtering options, dark mode, and smooth animations with custom notifications.</p>
-                    <a href="https://github.com/arnab2509/Scribble-Space" class="project-link" target="_blank">View on GitHub →</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Yumm: Food Delivery App</h3>
-                    <div class="project-tech">Flutter, Firebase, Authentication, Cloud Storage, Realtime DB</div>
-                    <p>A comprehensive food delivery application with real-time order tracking and secure Firebase authentication. Integrated Cloud Storage for user profiles and order history with intuitive UI design.</p>
-                    <a href="https://github.com/arnab2509/yumm" class="project-link" target="_blank">View on GitHub →</a>
-                </div>
-                
-                
-                <!-- <div class="project-card">
-                    <h3>Team Leadership Project</h3>
-                    <div class="project-tech">Flutter, Firebase - Team of 4 members</div>
-                    <p>Led a collaborative internship project overseeing all development phases from planning to deployment. Successfully managed project timelines, delegated tasks, and delivered a fully functional application meeting all requirements.</p>
-                </div> -->
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be rendered by JS -->
+            </div>
+            <div style="display:flex; justify-content:flex-end; align-items:center; margin-top:2.5rem; gap:1rem;">
+                <a href="all-projects.html" class="see-all-link btn-secondary" style="text-decoration:none;">See All →</a>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="section" style="background: var(--bg-secondary);">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            
-            <div class="card">
-                <div class="education-timeline">
-                    <div class="education-item timeline-item">
-                        <div class="education-item-details">
-                            <h3>Heritage Institute of Technology</h3>
-                            <div class="degree">Bachelor of Science in Computer Science</div>
-                        </div>
-                        <div class="education-item-meta">
-                            <div class="date">2022 - 2025</div>
-                            <div class="location">Kolkata, West Bengal</div>
-                        </div>
-                    </div>
-                    
-                    <div class="education-item timeline-item">
-                        <div class="education-item-details">
-                            <h3>Iswar Chandra Vidyasagar Polytechnic</h3>
-                            <div class="degree">Diploma in Computer Science and Technology</div>
-                        </div>
-                        <div class="education-item-meta">
-                            <div class="date">2019 - 2022</div>
-                            <div class="location">Jhargram, West Bengal</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card">
-                <h3>Relevant Coursework</h3>
-                <div class="coursework-grid">
-                    <div class="coursework-item">Data Structures & Algorithms</div>
-                    <div class="coursework-item">Operating Systems</div>
-                    <div class="coursework-item">Object Oriented Programming</div>
-                    <div class="coursework-item">Database Management System</div>
-                    <div class="coursework-item">Software Engineering</div>
-                </div>
-            </div>
+        <div class="container" id="education-section-js">
+            <!-- Education and Coursework will be rendered by JS -->
         </div>
     </section>
 
@@ -363,5 +146,147 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    // --- Render About Me ---
+    function renderAbout() {
+        const about = window.aboutMe || {};
+        const container = document.getElementById('about-section-js');
+        container.innerHTML = `
+            <div class="about-photo">
+                <img src="${about.photo || 'about-me.jpg'}" alt="Arnab Mondal" />
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p>${about.text || ''}</p>
+            </div>
+        `;
+    }
+
+    // --- Render Education & Coursework ---
+    function renderEducation() {
+        const edu = (window.education || []).slice(0, 2); // Show only first 2
+        const coursework = window.coursework || [];
+        const container = document.getElementById('education-section-js');
+        container.innerHTML = `
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+            <div class="education-timeline">
+                ${edu.map((item, idx) => `
+                    <div class="education-item timeline-item">
+                        <div class="education-item-details">
+                            <h3>${item.institute}</h3>
+                            <div class="degree">${item.degree}</div>
+                            <div class="education-item-meta">
+                                <span class="date">${item.date}</span>
+                                <span class="location">${item.location}</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+        <div class="see-all-education-btn-wrap">
+            <a href="all-education.html" class="see-all-link btn-secondary">See All Education →</a>
+        </div>
+        <div class="card">
+            <h3>Relevant Coursework</h3>
+            <div class="coursework-grid">
+                ${coursework.map(c => `<div class="coursework-item">${c}</div>`).join('')}
+            </div>
+        </div>
+    `;
+    }
+
+    // --- Render Skills ---
+    function renderSkills() {
+        const grid = document.getElementById('skills-grid');
+        grid.innerHTML = '';
+        (window.allSkills || []).forEach(cat => {
+            const card = document.createElement('div');
+            card.className = 'card skill-category';
+            card.innerHTML = `
+                <h3>${cat.category}</h3>
+                <div class="skill-tags">
+                    ${cat.items.map(skill => `
+                        <span class="skill-tag">
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/${skill.icon}.svg" alt="${skill.name}" class="skill-logo" />
+                            ${skill.name}
+                        </span>
+                    `).join('')}
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+    // --- Render Certifications ---
+    function renderCertifications() {
+        // This function is now only used by the experience section rendering.
+        // No need to call it separately.
+    }
+
+    // --- Render Projects on Front Page ---
+    let selectedProjectIds = (window.allProjects || []).slice(0, 3).map(p => p.id);
+    function renderProjects() {
+        const grid = document.getElementById('projects-grid');
+        grid.innerHTML = '';
+        (window.allProjects || []).filter(p => selectedProjectIds.includes(p.id)).forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+            card.innerHTML = `
+                <h3>${project.title}</h3>
+                <div class="project-tech">${project.tech}</div>
+                <p>${project.desc}</p>
+                <a href="${project.link}" class="project-link" target="_blank">View on GitHub →</a>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+    // --- Render Experience ---
+    function renderExperience() {
+        const exp = window.experience || [];
+        const certs = window.allCerts || [];
+        const container = document.getElementById('experience-section-js');
+        container.innerHTML = `
+            <h2 class="section-title">Experience & Certifications</h2>
+            ${exp.map(item => `
+                <div class="card">
+                    <div class="timeline-item">
+                        <h3>${item.title}</h3>
+                        <div class="date">${item.date}</div>
+                        <ul>
+                            ${item.details.map(d => `<li>${d}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `).join('')}
+            <div class="card">
+                <h3>Recent Certifications (June 2025)</h3>
+                ${certs.map(cert => `
+                    <div class="timeline-item">
+                        <h3>
+                            ${cert.title}
+                            <a href="${cert.link}" target="_blank" style="margin-left:10px; font-size:0.9em; text-decoration:none; color:#356cff; border:1px solid #356cff; border-radius:6px; padding:2px 8px;">certificate</a>
+                        </h3>
+                        <ul>
+                            ${cert.details.map(d => `<li>${d}</li>`).join('')}
+                        </ul>
+                    </div>
+                `).join('')}
+            </div>
+            <div style="display:flex; justify-content:flex-end; align-items:center; margin-top:2.5rem;">
+                <a href="experience.html" class="see-all-link btn-secondary" style="text-decoration:none;">See All Experience →</a>
+            </div>
+        `;
+    }
+
+    // --- Initial Render ---
+    renderAbout();
+    renderSkills();
+    renderProjects();
+    renderEducation();
+    renderExperience();
+    </script>
 </body>
 </html>

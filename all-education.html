@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Education - Arnab Mondal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="profile_-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="data-provider.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <button class="mobile-menu-btn" aria-label="Open menu" onclick="toggleDrawer()">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="logo" style="text-decoration:none;">Arnab Mondal</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </nav>
+        <!-- Drawer for mobile navigation -->
+        <div class="drawer" id="drawer">
+            <div class="drawer-header">
+                <span class="drawer-logo">Arnab Mondal</span>
+                <button class="drawer-close" aria-label="Close menu" onclick="toggleDrawer()">&times;</button>
+            </div>
+            <ul class="drawer-menu">
+                <li><a href="index.html#home" onclick="toggleDrawer()">Home</a></li>
+                <li><a href="index.html#about" onclick="toggleDrawer()">About Me</a></li>
+                <li><a href="index.html#skills" onclick="toggleDrawer()">Skills</a></li>
+                <li><a href="index.html#experience" onclick="toggleDrawer()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleDrawer()">Projects</a></li>
+                <li><a href="index.html#education" onclick="toggleDrawer()">Education</a></li>
+                <li><a href="index.html#contact" onclick="toggleDrawer()">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="drawer-backdrop" id="drawer-backdrop" onclick="toggleDrawer()"></div>
+    </header>
+    <section class="section" style="margin-top:80px;">
+        <div class="container" id="all-education-section-js">
+            <!-- All education timeline will be rendered by JS -->
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Arnab Mondal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function renderAllEducation() {
+        const edu = window.education || [];
+        const container = document.getElementById('all-education-section-js');
+        container.innerHTML = `
+            <h2 class="section-title">All Education</h2>
+            <div class="card">
+                <div class="education-timeline">
+                    ${edu.length === 0 ? `<div style="color:var(--text-secondary);padding:1rem;">No education records to show.</div>` : edu.map(item => `
+                        <div class="education-item timeline-item">
+                            <div class="education-item-details">
+                                <h3>${item.institute}</h3>
+                                <div class="degree">${item.degree}</div>
+                                <div class="education-item-meta">
+                                    <span class="date">${item.date}</span>
+                                    <span class="location">${item.location}</span>
+                                </div>
+                                ${item.board ? `<div class="education-desc">${item.board}</div>` : ""}
+                                ${item.percentage ? `<div class="education-desc">${item.percentage}</div>` : ""}
+                                ${item.description ? `<div class="education-desc">${item.description}</div>` : ""}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+    renderAllEducation();
+    </script>
+</body>
+</html>

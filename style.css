@@ -420,33 +420,22 @@ nav {
     border-radius: 50%;
 }
 
-.timeline-item h3 {
-    color: var(--accent-purple);
-    margin-bottom: 0.5rem;
-}
-
-.timeline-item .date {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.timeline-item ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.timeline-item li {
-    margin-bottom: 0.5rem;
+/* Education Timeline uses the same timeline style as Experience */
+.education-timeline .education-item.timeline-item {
+    border-left: 2px solid var(--accent-purple);
+    padding-left: 2rem;
+    margin-bottom: 2rem;
     position: relative;
-    padding-left: 1.5rem;
 }
-
-.timeline-item li::before {
-    content: '▸';
+.education-timeline .education-item.timeline-item::before {
+    content: '';
     position: absolute;
-    left: 0;
-    color: var(--accent-purple);
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-purple);
+    border-radius: 50%;
 }
 
 /* Projects Section */
@@ -829,6 +818,14 @@ html {
     .contact-socials {
         justify-content: center;
     }
+    .btn-primary,
+    .btn-secondary,
+    .see-more-btn,
+    .see-all-link {
+        padding: 0.5rem 1.1rem !important;
+        font-size: 0.95rem !important;
+        border-radius: 50px !important;
+    }
 }
 
 /* Education Timeline Styles */
@@ -881,6 +878,23 @@ html {
     font-size: 1rem;
 }
 
+/* See All Education button wrapper for spacing */
+.see-all-education-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Education timeline details */
+.education-item-details .education-desc {
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
 /* Responsive: stack on mobile */
 @media (max-width: 700px) {
     .education-timeline .timeline-item {
@@ -898,4 +912,12 @@ html {
         border-radius: 50px !important;
     }
     
+}
+.see-all-link {
+    /* ...existing code... */
+    text-decoration: none !important;
+}
+.see-all-link:hover {
+    /* ...existing code... */
+    text-decoration: none !important;
 }

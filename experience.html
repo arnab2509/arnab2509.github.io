@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience - Arnab Mondal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="profile_-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="data-provider.js"></script>
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <nav class="container">
+            <button class="mobile-menu-btn" aria-label="Open menu" onclick="toggleDrawer()">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="logo" style="text-decoration:none;">Arnab Mondal</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </nav>
+        <!-- Drawer for mobile navigation -->
+        <div class="drawer" id="drawer">
+            <div class="drawer-header">
+                <span class="drawer-logo">Arnab Mondal</span>
+                <button class="drawer-close" aria-label="Close menu" onclick="toggleDrawer()">&times;</button>
+            </div>
+            <ul class="drawer-menu">
+                <li><a href="index.html#home" onclick="toggleDrawer()">Home</a></li>
+                <li><a href="index.html#about" onclick="toggleDrawer()">About Me</a></li>
+                <li><a href="index.html#skills" onclick="toggleDrawer()">Skills</a></li>
+                <li><a href="index.html#experience" onclick="toggleDrawer()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleDrawer()">Projects</a></li>
+                <li><a href="index.html#education" onclick="toggleDrawer()">Education</a></li>
+                <li><a href="index.html#contact" onclick="toggleDrawer()">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="drawer-backdrop" id="drawer-backdrop" onclick="toggleDrawer()"></div>
+    </header>
+    <section class="section" style="margin-top:80px;">
+        <div class="container">
+            <h2 class="section-title">Experience & Certifications</h2>
+            <div class="card">
+                <div class="timeline-item">
+                    <h3>Android Developer Intern - Ardent Computech Pvt. Ltd.</h3>
+                    <div class="date">June 2024 - July 2024 | Kolkata, West Bengal</div>
+                    <ul>
+                        <li>Created custom mobile applications with native technologies</li>
+                        <li>Tested applications before final review to confirm issue resolution</li>
+                        <li>Maintained solid understanding of mobile development cycle</li>
+                        <li>Applied debugging techniques for quick issue resolution</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" id="certifications-card">
+                <h3>Recent Certifications (June 2025)</h3>
+                <!-- Certifications will be rendered by JS -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Arnab Mondal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    function renderCertifications() {
+        const certs = window.allCerts || [];
+        const certsCard = document.getElementById('certifications-card');
+        certs.forEach(cert => {
+            const div = document.createElement('div');
+            div.className = 'timeline-item';
+            div.innerHTML = `
+                <h3>
+                    ${cert.title}
+                    <a href="${cert.link}" target="_blank" style="margin-left:10px; font-size:0.9em; text-decoration:none; color:#356cff; border:1px solid #356cff; border-radius:6px; padding:2px 8px;">certificate</a>
+                </h3>
+                <ul>
+                    ${cert.details.map(d => `<li>${d}</li>`).join('')}
+                </ul>
+            `;
+            certsCard.appendChild(div);
+        });
+    }
+    renderCertifications();
+    </script>
+</body>
+</html>
