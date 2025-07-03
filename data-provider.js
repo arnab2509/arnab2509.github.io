@@ -120,7 +120,7 @@ window.aboutMe = {
 };
 
 // CV Download Link
-window.cvLink = "https://drive.google.com/file/d/1VxvL0pVIzkr_nHAJowj49vKUf_oj9hVQ/view?usp=sharing";
+window.cvLink = "https://drive.google.com/file/d/1kzGvwZVsq8c0VpSdYG9MnvXlaQ5URBBV/view?usp=sharing";
 
 // Education
 window.education = [
