@@ -1,13 +1,13 @@
 // Projects
 const allProjects = [
-    // // Random Project Example
-    // {
-    //     id: 'weatherly',
-    //     title: "Weatherly: Real-Time Weather App",
-    //     tech: "React, OpenWeatherMap API, CSS3",
-    //     desc: "A responsive web application that provides real-time weather updates for any city worldwide. Features include dynamic background changes, search history, and detailed weather statistics using the OpenWeatherMap API.",
-    //     link: "https://github.com/arnab2509/weatherly"
-    // },
+    {
+        id: 'ola-ride-analysis',
+        title: "OLA Ride Analysis Dashboard",
+        tech: "Power BI, PostgreSQL, SQL, Python, DAX",
+        desc: "Developed a 4-page interactive dashboard analyzing Ola ride booking data. Leveraged PostgreSQL for complex KPI extraction, automated Excel report generation using Python, and visualized trends in customer behavior, revenue performance, cancellations, and turnaround times in Power BI. Applied DAX for dynamic metrics like completion rate and CTAT/VTAT analysis.",
+        link: "https://github.com/arnab2509/ola-ride-analysis-powerbi-sql" 
+    },
+   
     {
         id: 'ecommerce',
         title: "Ecommerce Sales Dashboard in Power BI",
