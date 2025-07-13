@@ -22,13 +22,14 @@ const allProjects = [
         desc: "A modern Content Management System for managing rich media blog posts with offline data support. Features include search functionality, filtering options, dark mode, and smooth animations with custom notifications.",
         link: "https://github.com/arnab2509/Scribble-Space"
     },
-    {
-        id: 'yumm',
-        title: "Yumm: Food Delivery App",
-        tech: "Flutter, Firebase, Authentication, Cloud Storage, Realtime DB",
-        desc: "A comprehensive food delivery application with real-time order tracking and secure Firebase authentication. Integrated Cloud Storage for user profiles and order history with intuitive UI design.",
-        link: "https://github.com/arnab2509/yumm"
-    },
+   {
+    id: 'yumm',
+    title: "Yumm: Food Delivery App",
+    tech: "Flutter, Firebase (Auth, Firestore, Storage), Cloudinary, Dart",
+    desc: "A responsive food delivery app with role-based access for users and admins. Features include email verification, real-time order tracking, profile management, and Cloudinary-powered image uploads.",
+    link: "https://github.com/arnab2509/yumm"
+}
+
     
     
     // Add more projects as needed
@@ -85,14 +86,25 @@ const allSkills = [
 // Certifications
 const allCerts = [
     {
-        title: "Deloitte Australia Data Analytics Job Simulation",
-        link: "https://drive.google.com/file/d/1DzGRJMUFx7gkKkKgWdFihXwu6iVFdYen/view?usp=sharing",
+    title: "HP LIFE Data Science & Analytics Certificate",
+    link: "https://drive.google.com/file/d/1tHqzyIICNDpCXAF_2finS5yFtdxBaQu9/view?usp=sharing", 
+    details: [
+        "Explored data-driven strategies and business decision-making",
+        "Learned essential tools and skills for a data science career",
+        "Understood the role of AI/ML in modern data systems",
+        "Examined ethical and cybersecurity considerations in data tech"
+    ]
+}
+,{
+        title: "Tata Data Visualisation Job Simulation",
+        link: "https://drive.google.com/file/d/12ALdvt0Q-OHzLy6YZSOtLFY1OY3RiCOC/view?usp=sharing",
         details: [
-            "Completed data analysis and forensic technology simulation",
-            "Created data dashboard using Tableau",
-            "Used Excel for data classification and business insights"
+            "Created data visualizations for business insights",
+            "Prepared strategic questions for client leadership meetings",
+            "Developed visuals for executive decision making"
         ]
     },
+
     {
         title: "Accenture Software Engineering Virtual Simulation",
         link: "https://drive.google.com/file/d/17JHu3_Shuex-d22SqR0CwwZWkI4sAt0c/view?usp=sharing",
@@ -102,15 +114,16 @@ const allCerts = [
             "Developed problem-solving and collaboration skills"
         ]
     },
-    {
-        title: "Tata Data Visualisation Job Simulation",
-        link: "https://drive.google.com/file/d/12ALdvt0Q-OHzLy6YZSOtLFY1OY3RiCOC/view?usp=sharing",
+        {
+        title: "Deloitte Australia Data Analytics Job Simulation",
+        link: "https://drive.google.com/file/d/1DzGRJMUFx7gkKkKgWdFihXwu6iVFdYen/view?usp=sharing",
         details: [
-            "Created data visualizations for business insights",
-            "Prepared strategic questions for client leadership meetings",
-            "Developed visuals for executive decision making"
+            "Completed data analysis and forensic technology simulation",
+            "Created data dashboard using Tableau",
+            "Used Excel for data classification and business insights"
         ]
-    }
+    },
+    
 ];
 
 // About Me
