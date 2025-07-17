@@ -246,7 +246,9 @@
     // --- Render Experience ---
     function renderExperience() {
         const exp = window.experience || [];
-        const certs = window.allCerts || [];
+        // const certs = window.allCerts || [];
+        const certs = (window.allCerts || []).slice(0, 3);
+
         const container = document.getElementById('experience-section-js');
         container.innerHTML = `
             <h2 class="section-title">Experience & Certifications</h2>

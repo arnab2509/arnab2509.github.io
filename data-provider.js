@@ -85,6 +85,18 @@ const allSkills = [
 
 // Certifications
 const allCerts = [
+   {
+  "title": "Power BI for Beginners Certificate (Simplilearn, powered by Microsoft)",
+  "link": "https://drive.google.com/file/d/1zjp1psmzlU-mWDnqbNVLtwsHr7ICcDdp/view?usp=sharing",
+  "details": [
+    "Explored the fundamentals of Power BI architecture and services",
+    "Built interactive dashboards and data visualizations using real datasets",
+    "Performed data cleaning and transformation using Power Query Editor",
+    "Applied essential DAX formulas to calculate KPIs and derive insights"
+  ]
+}
+
+,
     {
     title: "HP LIFE Data Science & Analytics Certificate",
     link: "https://drive.google.com/file/d/1tHqzyIICNDpCXAF_2finS5yFtdxBaQu9/view?usp=sharing", 
@@ -133,7 +145,7 @@ window.aboutMe = {
 };
 
 // CV Download Link
-window.cvLink = "https://drive.google.com/file/d/1Rgcdyap8moc8qz9kd1z4rYFfPaK6VsP-/view?usp=sharing";
+window.cvLink = "https://drive.google.com/file/d/1LVE0za71iUn-QheN9vJBTZ3q5fhZ6u5r/view?usp=sharing";
 
 // Education
 window.education = [
