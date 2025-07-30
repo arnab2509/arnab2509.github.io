@@ -1,6 +1,14 @@
 // Projects
 const allProjects = [
     {
+    id: 'supply-chain-dashboard',
+    title: "Inventory & Supply Chain Dashboard",
+    tech: "Power BI, DAX, Data Modeling, Forecasting, CSV",
+    desc: "Developed an interactive Power BI dashboard to analyze and optimize inventory and supply chain performance. Implemented ABC (COGS-based) and XYZ (demand variability) analysis, warehouse utilization tracking, and time-series forecasting of units sold. Visualized key metrics like transportation cost, order accuracy, and category-level performance using dynamic DAX measures.",
+    link: "https://github.com/arnab2509/inventory-supply-chain-dashboard"
+}
+,
+    {
         id: 'ola-ride-analysis',
         title: "OLA Ride Analysis Dashboard",
         tech: "Power BI, PostgreSQL, SQL, Python, DAX",
@@ -85,6 +93,18 @@ const allSkills = [
 
 // Certifications
 const allCerts = [
+    {
+  "title": "Business Analytics with Excel (Simplilearn, powered by Microsoft)",
+  "date": "28th July 2025",
+  "link": "https://drive.google.com/file/d/1I1dvfjCTBt1pDCBr2e6oaioDfE-HaEfg/view?usp=sharing",
+  "details": [
+    "Completed hands-on training in data analysis and business decision-making using Excel.",
+    "Learned how to create dashboards, visualizations, and analytical models.",
+    "Applied Excel functions like PivotTables, VLOOKUP, and conditional formulas.",
+    "Gained exposure to real-world case studies and practical business scenarios."
+  ]
+}
+,
    {
   "title": "Power BI for Beginners Certificate (Simplilearn, powered by Microsoft)",
   "link": "https://drive.google.com/file/d/1zjp1psmzlU-mWDnqbNVLtwsHr7ICcDdp/view?usp=sharing",
