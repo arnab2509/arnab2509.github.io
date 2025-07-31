@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Experience - Arnab Mondal</title>
+    <title>Certifications - Arnab Mondal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="profile_-removebg-preview.png">
     <link rel="stylesheet" href="style.css">
@@ -49,30 +49,9 @@
     </header>
     <section class="section" style="margin-top:80px;">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="card">
-                <div id="experience-timeline"></div>
-                <script>
-                // Fetch experience data from data-provider.js and render
-                window.allExperience = window.experience || [];
-                document.addEventListener('DOMContentLoaded', function() {
-                    const timeline = document.getElementById('experience-timeline');
-                    const experiences = window.allExperience || [];
-                    experiences.forEach(exp => {
-                        const div = document.createElement('div');
-                        div.className = 'timeline-item';
-                        div.innerHTML = `
-                            <h3>${exp.title}</h3>
-                            <div class="date">${exp.date} | ${exp.location || ''} |  ${exp.type || exp.experienceType || ''}</div>
-                            <div class="experience-type"></div>
-                            <ul>
-                                ${exp.details.map(d => `<li>${d}</li>`).join('')}
-                            </ul>
-                        `;
-                        timeline.appendChild(div);
-                    });
-                });
-                </script>
+            <h2 class="section-title">Certifications</h2>
+            <div class="card" id="certifications-card">
+                <!-- Certifications will be rendered by JS -->
             </div>
         </div>
     </section>
@@ -102,10 +81,6 @@
         });
     }
     renderCertifications();
-    </script>
-</body>
-</html>
-    
     </script>
 </body>
 </html>

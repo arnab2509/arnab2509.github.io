@@ -127,34 +127,34 @@ const allCerts = [
         "Examined ethical and cybersecurity considerations in data tech"
     ]
 }
-,{
-        title: "Tata Data Visualisation Job Simulation",
-        link: "https://drive.google.com/file/d/12ALdvt0Q-OHzLy6YZSOtLFY1OY3RiCOC/view?usp=sharing",
-        details: [
-            "Created data visualizations for business insights",
-            "Prepared strategic questions for client leadership meetings",
-            "Developed visuals for executive decision making"
-        ]
-    },
+// ,{
+//         title: "Tata Data Visualisation Job Simulation",
+//         link: "https://drive.google.com/file/d/12ALdvt0Q-OHzLy6YZSOtLFY1OY3RiCOC/view?usp=sharing",
+//         details: [
+//             "Created data visualizations for business insights",
+//             "Prepared strategic questions for client leadership meetings",
+//             "Developed visuals for executive decision making"
+//         ]
+//     },
 
-    {
-        title: "Accenture Software Engineering Virtual Simulation",
-        link: "https://drive.google.com/file/d/17JHu3_Shuex-d22SqR0CwwZWkI4sAt0c/view?usp=sharing",
-        details: [
-            "Completed modules on Software Architecture, Security, Programming",
-            "Gained hands-on experience with Testing and Agile methodologies",
-            "Developed problem-solving and collaboration skills"
-        ]
-    },
-        {
-        title: "Deloitte Australia Data Analytics Job Simulation",
-        link: "https://drive.google.com/file/d/1DzGRJMUFx7gkKkKgWdFihXwu6iVFdYen/view?usp=sharing",
-        details: [
-            "Completed data analysis and forensic technology simulation",
-            "Created data dashboard using Tableau",
-            "Used Excel for data classification and business insights"
-        ]
-    },
+//     {
+//         title: "Accenture Software Engineering Virtual Simulation",
+//         link: "https://drive.google.com/file/d/17JHu3_Shuex-d22SqR0CwwZWkI4sAt0c/view?usp=sharing",
+//         details: [
+//             "Completed modules on Software Architecture, Security, Programming",
+//             "Gained hands-on experience with Testing and Agile methodologies",
+//             "Developed problem-solving and collaboration skills"
+//         ]
+//     },
+//         {
+//         title: "Deloitte Australia Data Analytics Job Simulation",
+//         link: "https://drive.google.com/file/d/1DzGRJMUFx7gkKkKgWdFihXwu6iVFdYen/view?usp=sharing",
+//         details: [
+//             "Completed data analysis and forensic technology simulation",
+//             "Created data dashboard using Tableau",
+//             "Used Excel for data classification and business insights"
+//         ]
+//     },
     
 ];
 
@@ -164,8 +164,11 @@ window.aboutMe = {
     text: "I'm Arnab Mondal, a B.Tech graduate in Computer Science from Heritage Institute of Technology, specializing in Android development using Flutter and data analytics. I build intuitive, scalable mobile apps and craft meaningful insights using Power BI, Tableau, and Excel. With hands-on experience in both development and analytics, I’m passionate about creating tech-driven solutions that make an impact."
 };
 
-// CV Download Link
-window.cvLink = "https://drive.google.com/file/d/1LVE0za71iUn-QheN9vJBTZ3q5fhZ6u5r/view?usp=sharing";
+// CV Download Links
+window.cvLinks = {
+    general: "https://drive.google.com/file/d/1LVE0za71iUn-QheN9vJBTZ3q5fhZ6u5r/view?usp=sharing",
+    dataAnalyst: "https://drive.google.com/file/d/1tvip_vZQHqETd2Q9BYvMumW47M77xHKb/view?usp=sharing" // Replace with your actual Data Analyst CV link
+};
 
 // Education
 window.education = [
@@ -219,8 +222,50 @@ window.coursework = [
 // Experience Section
 window.experience = [
     {
+    title: "Data Visualization Job Simulation - Tata Group",
+    date: " July 2025",
+     location:'Virtual',
+     experienceType:"Micro Internship",
+    details: [
+        "Created impactful data visualizations to support business insights",
+        "Prepared strategic questions for client leadership meetings",
+        "Designed visuals tailored for executive-level decision making",
+        // "Certificate: https://drive.google.com/file/d/12ALdvt0Q-OHzLy6YZSOtLFY1OY3RiCOC/view?usp=sharing"
+    ]
+},
+{
+    title: "Software Engineering Job Simulation - Accenture",
+    date: " June 2025",
+     location:'Virtual',
+     experienceType:"Micro Internship",
+
+    details: [
+        "Completed modules on software architecture, cybersecurity, and programming",
+        "Gained hands-on experience with Agile methodology and software testing",
+        "Developed practical problem-solving and collaboration skills",
+        // "Certificate: https://drive.google.com/file/d/17JHu3_Shuex-d22SqR0CwwZWkI4sAt0c/view?usp=sharing"
+    ]
+},
+{
+    title: "Data Analytics Job Simulation - Deloitte Australia",
+    date: "June 2025",
+    location:'Virtual',
+     experienceType:"Micro Internship",
+
+    details: [
+        "Completed data analysis and forensic technology simulation tasks",
+        "Created interactive dashboards using Tableau for business insights",
+        "Utilized Excel for data classification and analytical reporting",
+        // "Certificate: https://drive.google.com/file/d/1DzGRJMUFx7gkKkKgWdFihXwu6iVFdYen/view?usp=sharing"
+    ]
+}
+,
+    {
         title: "Android Developer Intern - Ardent Computech Pvt. Ltd.",
-        date: "June 2024 - July 2024 | Kolkata, West Bengal",
+        date: "June 2024 - July 2024 ",
+        location: " Kolkata, West Bengal",
+     experienceType:"Internship",
+
         details: [
             "Created custom mobile applications with native technologies",
             "Tested applications before final review to confirm issue resolution",

@@ -21,6 +21,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications" class="certifications-link">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact Me</a></li>
@@ -39,6 +40,7 @@
                 <li><a href="#about" onclick="toggleDrawer()">About Me</a></li>
                 <li><a href="#skills" onclick="toggleDrawer()">Skills</a></li>
                 <li><a href="#experience" onclick="toggleDrawer()">Experience</a></li>
+                <li><a href="#certifications" class="certifications-link" onclick="toggleDrawer()">Certifications</a></li>
                 <li><a href="#projects" onclick="toggleDrawer()">Projects</a></li>
                 <li><a href="#education" onclick="toggleDrawer()">Education</a></li>
                 <li><a href="#contact" onclick="toggleDrawer()">Contact Me</a></li>
@@ -59,7 +61,7 @@
                     Android App Developer<span style="color:#b409ed;">_</span>
                 </p>
                 <div style="display:flex; gap:1.5rem;">
-                    <a id="cv-download-btn" target="_blank" class="btn-primary hero-btn" style="padding:1rem 2.5rem; font-size:1.2rem; font-weight:600; border-radius:12px; background:#356cff; color:#fff; border:none; box-shadow:0 2px 8px rgba(53,108,255,0.08); transition:background 0.2s;">Download CV</a>
+                    <a id="cv-download-btn" target="_blank" class="btn-primary hero-btn" style="padding:1rem 2.5rem; font-size:1.2rem; font-weight:600; border-radius:12px; background:#356cff; color:#fff; border:none; box-shadow:0 2px 8px rgba(53,108,255,0.08); transition:background 0.2s; cursor:pointer;">Download CV</a>
                     <a href="#contact" class="btn-secondary hero-btn" style="padding:1rem 2.5rem; font-size:1.2rem; font-weight:600; border-radius:12px; border:2px solid #356cff; color:#356cff; background:transparent; transition:background 0.2s, color 0.2s;">Contact Me</a>
                 </div>
             </div>
@@ -86,12 +88,13 @@
     </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience & Certifications Section -->
     <section id="experience" class="section" style="background: var(--bg-secondary);">
         <div class="container" id="experience-section-js">
-            <!-- Experience will be rendered by JS -->
+            <!-- Experience and Certifications will be rendered by JS -->
         </div>
     </section>
+    <section id="certifications"></section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
@@ -243,44 +246,70 @@
         });
     }
 
-    // --- Render Experience ---
+    // --- Render Experience & Certifications ---
     function renderExperience() {
-        const exp = window.experience || [];
-        // const certs = window.allCerts || [];
+        const exp = (window.experience || []).slice(0, 3);
         const certs = (window.allCerts || []).slice(0, 3);
-
-        const container = document.getElementById('experience-section-js');
-        container.innerHTML = `
-            <h2 class="section-title">Experience & Certifications</h2>
-            ${exp.map(item => `
-                <div class="card">
-                    <div class="timeline-item">
-                        <h3>${item.title}</h3>
-                        <div class="date">${item.date}</div>
-                        <ul>
-                            ${item.details.map(d => `<li>${d}</li>`).join('')}
-                        </ul>
-                    </div>
-                </div>
-            `).join('')}
+        const experienceSection = document.getElementById('experience-section-js');
+        experienceSection.innerHTML = `
+            <h2 class="section-title">Experience</h2>
             <div class="card">
-                <h3>Recent Certifications (June 2025)</h3>
-                ${certs.map(cert => `
-                    <div class="timeline-item">
-                        <h3>
-                            ${cert.title}
-                            <a href="${cert.link}" target="_blank" style="margin-left:10px; font-size:0.9em; text-decoration:none; color:#356cff; border:1px solid #356cff; border-radius:6px; padding:2px 8px;">certificate</a>
-                        </h3>
-                        <ul>
-                            ${cert.details.map(d => `<li>${d}</li>`).join('')}
-                        </ul>
-                    </div>
-                `).join('')}
+                <div id="experience-timeline"></div>
             </div>
             <div style="display:flex; justify-content:flex-end; align-items:center; margin-top:2.5rem;">
                 <a href="experience.html" class="see-all-link btn-secondary" style="text-decoration:none;">See All Experience →</a>
             </div>
         `;
+        // Render experience timeline items
+        const timeline = document.getElementById('experience-timeline');
+        exp.forEach(expItem => {
+            const div = document.createElement('div');
+            div.className = 'timeline-item';
+            div.innerHTML = `
+                <h3>${expItem.title}</h3>
+                <div class="date">${expItem.date}${expItem.location ? ' | ' + expItem.location : ''}${expItem.type || expItem.experienceType ? ' | ' + (expItem.type || expItem.experienceType) : ''}</div>
+                <div class="experience-type"></div>
+                <ul>
+                    ${(expItem.details || []).map(d => `<li>${d}</li>`).join('')}
+                </ul>
+            `;
+            timeline.appendChild(div);
+        });
+
+        // Render Certifications section separately
+        let certSection = document.getElementById('certifications');
+        if (!certSection) {
+            certSection = document.createElement('section');
+            certSection.id = 'certifications';
+            certSection.className = 'section';
+            experienceSection.parentNode.insertBefore(certSection, experienceSection.nextSibling);
+        }
+        certSection.innerHTML = `
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="card">
+                    <div id="certifications-timeline"></div>
+                </div>
+                <div style="display:flex; justify-content:flex-end; align-items:center; margin-top:2.5rem;">
+                    <a href="certifications.html" class="see-all-link btn-secondary" style="text-decoration:none;">See All Certifications →</a>
+                </div>
+            </div>
+        `;
+        const certTimeline = document.getElementById('certifications-timeline');
+        certs.forEach(cert => {
+            const div = document.createElement('div');
+            div.className = 'timeline-item';
+            div.innerHTML = `
+                <h3>
+                    ${cert.title}
+                    <a href="${cert.link}" target="_blank" style="margin-left:10px; font-size:0.9em; text-decoration:none; color:#356cff; border:1px solid #356cff; border-radius:6px; padding:2px 8px;">certificate</a>
+                </h3>
+                <ul>
+                    ${cert.details.map(d => `<li>${d}</li>`).join('')}
+                </ul>
+            `;
+            certTimeline.appendChild(div);
+        });
     }
 
     // Set CV download link from provider
@@ -292,6 +321,72 @@
         }
     });
 
+    // --- Set CV download links and modal logic ---
+    document.addEventListener("DOMContentLoaded", function() {
+        var cvBtn = document.getElementById('cv-download-btn');
+        var cvModal = document.getElementById('cv-modal');
+        var cvClose = document.getElementById('cv-modal-close');
+        var cvGeneral = document.getElementById('cv-general-link');
+        var cvDA = document.getElementById('cv-da-link');
+
+        // Use links from data-provider.js
+        var generalCV = (window.cvLinks && window.cvLinks.general) ? window.cvLinks.general : "https://drive.google.com/file/d/1LVE0za71iUn-QheN9vJBTZ3q5fhZ6u5r/view?usp=sharing";
+        var daCV = (window.cvLinks && window.cvLinks.dataAnalyst) ? window.cvLinks.dataAnalyst : "https://drive.google.com/file/d/1Qw7nQkQkQkQkQkQkQkQkQkQkQkQkQ/view?usp=sharing";
+
+        // Helper: apply theme to modal
+        function applyModalTheme() {
+            if (!cvModal) return;
+            if (document.body.classList.contains('dark')) {
+                cvModal.classList.add('dark');
+            } else {
+                cvModal.classList.remove('dark');
+            }
+        }
+
+        if (cvGeneral) {
+            cvGeneral.onclick = function(e) {
+                cvModal.style.display = 'none';
+                window.open(generalCV, '_blank');
+                return false;
+            };
+        }
+        if (cvDA) {
+            cvDA.onclick = function(e) {
+                cvModal.style.display = 'none';
+                window.open(daCV, '_blank');
+                return false;
+            };
+        }
+
+        if (cvBtn && cvModal) {
+            cvBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                applyModalTheme();
+                cvModal.style.display = 'flex';
+            });
+        }
+        if (cvClose && cvModal) {
+            cvClose.addEventListener('click', function() {
+                cvModal.style.display = 'none';
+            });
+        }
+        if (cvModal) {
+            cvModal.addEventListener('click', function(e) {
+                if (e.target === cvModal) {
+                    cvModal.style.display = 'none';
+                }
+            });
+        }
+
+        // Listen for theme changes (if theme-toggle changes body class)
+        var themeToggle = document.querySelector('.theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                setTimeout(applyModalTheme, 10);
+            });
+        }
+    });
+
     // --- Initial Render ---
     renderAbout();
     renderSkills();
@@ -299,5 +394,15 @@
     renderEducation();
     renderExperience();
     </script>
+
+    <!-- CV Modal -->
+<div id="cv-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.35); z-index:1000; align-items:center; justify-content:center;">
+    <div class="cv-modal-content">
+        <button id="cv-modal-close" style="position:absolute; top:10px; right:16px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+        <h3 style="margin-bottom:1.5rem;">Choose CV to Download</h3>
+        <a id="cv-general-link" href="#" target="_blank" class="btn-primary" style="display:block; margin-bottom:1rem; padding:0.8rem 1.5rem; border-radius:8px; background:#356cff; color:#fff; text-decoration:none; font-weight:600;">General CV</a>
+        <a id="cv-da-link" href="#" target="_blank" class="btn-secondary" style="display:block; padding:0.8rem 1.5rem; border-radius:8px; border:2px solid #356cff; color:#356cff; background:transparent; text-decoration:none; font-weight:600;">Data Analyst CV</a>
+    </div>
+</div>
 </body>
 </html>
