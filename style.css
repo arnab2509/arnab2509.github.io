@@ -8,8 +8,8 @@
 /* CSS Custom Properties (Variables) */
 :root {
     --bg-primary: #0a0a0a;
-    --bg-secondary: #1a1a1a;
-    --bg-card: #1e1e1e;
+    --bg-secondary: #0a0a0a;
+    --bg-card: #201717;
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;
     --accent-purple: #8b5cf6;
@@ -23,8 +23,8 @@
 /* Light Theme Variables */
 .light-theme {
     --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-card: #ffffff;
+    --bg-secondary: #ffffff;
+    --bg-card: #f6f2fa;
     --text-primary: #1a1a1a;
     --text-secondary: #64748b;
     --border-color: #e2e8f0;
@@ -336,6 +336,7 @@ nav {
 }
 
 /* Card Components */
+
 .card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -928,13 +929,13 @@ html {
     background: transparent !important;
     color: inherit !important;
     border-radius: 14px;
-    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.25), 0 4px 24px rgba(139, 92, 246, 0.13);
+    box-shadow: 0 20px 40px rgba(176, 64, 232, 0.82); /* purple shadow, matches .card:hover */
     padding: 2rem 2.5rem;
     min-width: 260px;
     max-width: 90vw;
     text-align: center;
     position: relative;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 }
