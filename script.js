@@ -230,6 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
 // Form validation (if contact form is added later)
 function validateContactForm(formData) {
     const errors = [];

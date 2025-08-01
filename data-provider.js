@@ -52,7 +52,7 @@ const allSkills = [
             { name: "Java", icon: "java" },
             { name: "JavaScript", icon: "javascript" },
             { name: "Dart", icon: "dart" },
-            { name: "SQL", icon: "mysql" },
+            { name: "SQL", icon: "databricks" },
             { name: "HTML", icon: "html5" },
             { name: "CSS", icon: "css3" }
         ]
@@ -75,7 +75,7 @@ const allSkills = [
         items: [
             { name: "MongoDB", icon: "mongodb" },
             { name: "Firebase", icon: "firebase" },
-            { name: "MySQL", icon: "mysql" }
+            { name: "PostgreSQL", icon: "postgresql" }
         ]
     },
     {
@@ -161,7 +161,7 @@ const allCerts = [
 // About Me
 window.aboutMe = {
     photo: "about-me.jpg",
-    text: "I'm Arnab Mondal, a B.Tech graduate in Computer Science from Heritage Institute of Technology, specializing in Android development using Flutter and data analytics. I build intuitive, scalable mobile apps and craft meaningful insights using Power BI, Tableau, and Excel. With hands-on experience in both development and analytics, I’m passionate about creating tech-driven solutions that make an impact."
+    text: "Hello! I'm Arnab Mondal, a Computer Science graduate from Heritage Institute of Technology, with a strong interest in Android development and data analytics.I develop responsive, high-performance mobile apps using Flutter and Firebase, and extract actionable insights from data using Power BI, Tableau, Excel, and PostgreSQL. I’ve worked on end-to-end app development and built interactive dashboards that support better decision-making. I enjoy combining clean code with thoughtful design — whether it's through a seamless user interface or a well-told data story.I'm passionate about using technology to solve real-world problems and always looking for opportunities to build meaningful, user-focused solutions."
 };
 
 // CV Download Links
