@@ -258,11 +258,11 @@ function scrollToTop() {
     });
 
 } 
-// Initialize typing effect when page loads
-document.addEventListener('DOMContentLoaded', function() {
-    const subtitle = document.querySelector('.hero .subtitle');
-    if (subtitle) {
-        const originalText = subtitle.textContent;
-        typeWriter(subtitle, originalText, 80);  // Enable this line
-    }
-});
+// // Initialize typing effect when page loads
+// document.addEventListener('DOMContentLoaded', function() {
+//     const subtitle = document.querySelector('.hero .subtitle');
+//     if (subtitle) {
+//         const originalText = subtitle.textContent;
+//         typeWriter(subtitle, originalText, 80);  // Enable this line
+//     }
+// });

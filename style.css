@@ -756,18 +756,23 @@ html {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 .drawer-menu a {
+      display: inline-block; 
+      width: 100%;  
+    transition: background 0.2s, color 0.2s;
     color: var(--text-primary);
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 0.5rem 1.5rem;
-    transition: background 0.2s, color 0.2s;
-    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0px;
+    line-height: 0.4;    
 }
 .drawer-menu a:hover {
+   
+
     background: var(--accent-purple);
     color: #fff;
 }
