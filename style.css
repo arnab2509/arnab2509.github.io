@@ -11,6 +11,8 @@
     --bg-primary: #0e0b1f;
     --bg-secondary: #16132a;
     --bg-card: #1f1c3589;
+    --bg-navbar: #1f1c35e0;
+
     /* --bg-card: transparent; */
 
 
@@ -34,6 +36,8 @@
     --bg-primary: #fdfcfe;
     --bg-secondary: #ffffff;
     --bg-card: #f4f0fa9f;
+    --bg-navbar: #f4f0faeb;
+
     /* --bg-card: transparent; */
 
     --text-primary: #1e1a3d;
@@ -712,7 +716,7 @@ html {
     left: -260px;
     width: 240px;
     height: 100vh;
-    background: var(--bg-card);
+    background: var(--bg-navbar);
     box-shadow: 2px 0 16px rgba(0,0,0,0.15);
     z-index: 1201; /* below the menu button */
     transition: left 0.3s cubic-bezier(.4,0,.2,1);
