@@ -167,7 +167,7 @@ window.aboutMe = {
 // CV Download Links
 window.cvLinks = {
     general: "https://drive.google.com/file/d/1LVE0za71iUn-QheN9vJBTZ3q5fhZ6u5r/view?usp=sharing",
-    dataAnalyst: "https://drive.google.com/file/d/1tvip_vZQHqETd2Q9BYvMumW47M77xHKb/view?usp=sharing" // Replace with your actual Data Analyst CV link
+    dataAnalyst: "https://drive.google.com/file/d/1hhfCILaUdPYRoaJWHxChdooHaHSPf1p-/view?usp=sharing" // Replace with your actual Data Analyst CV link
 };
 
 // Education
