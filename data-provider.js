@@ -166,7 +166,7 @@ window.aboutMe = {
 
 // CV Download Links
 window.cvLinks = {
-    general: "https://drive.google.com/file/d/1LVE0za71iUn-QheN9vJBTZ3q5fhZ6u5r/view?usp=sharing",
+    general: "https://drive.google.com/file/d/1WVH25lfp9C7QmmIKiPH7cMBX3YJ0uaXi/view?usp=drive_link",
     dataAnalyst: "https://drive.google.com/file/d/1hhfCILaUdPYRoaJWHxChdooHaHSPf1p-/view?usp=sharing" // Replace with your actual Data Analyst CV link
 };
 
