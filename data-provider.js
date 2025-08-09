@@ -1,6 +1,15 @@
 // Projects
 const allProjects = [
     {
+    id: 'amazon-sales-dashboard',
+    title: "Amazon Sales Analysis Dashboard",
+    tech: "PostgreSQL, Power BI, Data Modeling, Data Visualization",
+    desc: "Built an interactive Power BI dashboard from cleaned Amazon sales data in PostgreSQL. Included Price vs Rating analysis, Top 5 products by rating/sales/discount, and ABC-XYZ inventory insights to optimize pricing, discounts, and inventory decisions.",
+    link: "https://github.com/arnab2509/amazon-sales-analysis-dashboard"
+}
+
+,
+    {
     id: 'supply-chain-dashboard',
     title: "Inventory & Supply Chain Dashboard",
     tech: "Power BI, DAX, Data Modeling, Forecasting, CSV",
