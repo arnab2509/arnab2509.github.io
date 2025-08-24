@@ -98,6 +98,13 @@ const allSkills = [
             {name:"Jupyter Notebook", icon: "jupyter" },
         ]
     }
+    ,{
+        category:"Robotic Process Automation",
+        items:[
+            {name:"Automation Anywhere",icon:"n8n"}
+        ]
+
+    }
 ];
 
 // Certifications
@@ -175,7 +182,7 @@ window.aboutMe = {
 
 // CV Download Links
 window.cvLinks = {
-    general: "https://drive.google.com/file/d/1WVH25lfp9C7QmmIKiPH7cMBX3YJ0uaXi/view?usp=drive_link",
+    general: "https://drive.google.com/file/d/1_R_IK1gYoGJUCosHcAvnhrBTRmmJErfe/view?usp=sharing",
     dataAnalyst: "https://drive.google.com/file/d/1hhfCILaUdPYRoaJWHxChdooHaHSPf1p-/view?usp=sharing" // Replace with your actual Data Analyst CV link
 };
 
